@@ -10,6 +10,7 @@
             ]) !!};
         </script>
 
+       
         <title>Laravel</title>
 
         <!-- Fonts -->
