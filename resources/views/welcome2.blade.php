@@ -4,13 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script>
-            window.Laravel = {!! json_encode([
-                'user' => auth()->check() ? auth()->user()->id : null,
-            ]) !!};
-        </script>
-
-       
         <title>Laravel</title>
 
         <!-- Fonts -->
