@@ -31,7 +31,7 @@ Route::get('/welcome2', function () {
     $order =  Order::where('order_id', 1)->first();
     $user = User::where('id', 1)->first();
     event(new ShippingStatusUpdated($user, $order));
-    return view('welcome2');
+    // return view('welcome2');
 });
 
  
