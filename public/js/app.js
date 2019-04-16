@@ -59429,7 +59429,7 @@ var app = new Vue({
   el: '#app',
   created: function created() {}
 });
-window.Echo["private"]('user.1').listen('ShippingStatusUpdated', function (e) {
+window.Echo["private"]('user.' + window.Laravel.user).listen('ShippingStatusUpdated', function (e) {
   console.log(e);
 });
 

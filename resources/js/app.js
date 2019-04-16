@@ -38,7 +38,7 @@ const app = new Vue({
 
 
 
-window.Echo.private('user.1')
+window.Echo.private('user.' + window.Laravel.user)
             .listen('ShippingStatusUpdated', (e) => {
                 console.log(e);
             });
