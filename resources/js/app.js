@@ -32,14 +32,14 @@ const app = new Vue({
     el: '#app',
 
     created() {
-       
+        window.Echo.private('user.' + window.Laravel.user)
+            .listen('ShippingStatusUpdated', (e) => {
+                console.log(e);
+            });
     },
 });
 
 
 
-window.Echo.private('user.' + window.Laravel.user)
-            .listen('ShippingStatusUpdated', (e) => {
-                console.log(e);
-            });
+
 
